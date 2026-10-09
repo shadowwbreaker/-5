@@ -21,17 +21,22 @@
 - **REPORT_PRACTICE_5.md**: Отчёт о выполненной работе.
 
 ## Выполненные операции
-1. Настройка подключения к репозиторию.
-2. Получение проекта.
-3. Добавление класса.
-4. Изменение класса.
-5. Push изменений.
-6. Восстановление проекта через clone.
-7. Добавление и удаление лишнего файла.
-8. Просмотр журнала изменений.
 
-## Фильтрация файлов
-Опиши назначение .gitignore.
+### 1. Настройка подключения к репозиторию
 
-## История Git
-Укажи, какие commits были созданы.
+```bash
+git config --global user.name "Ваше Имя"
+git config --global user.email "your_email@example.com"
+
+cd путь/к/проекту
+
+git init
+git add .
+git commit -m "Initial commit"
+
+git remote add origin https://github.com/shadowbreaker/-5.git
+git branch -M master
+git push -u origin master
+
+git remote -v
+git status
